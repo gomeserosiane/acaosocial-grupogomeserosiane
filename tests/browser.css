@@ -1,0 +1,1 @@
+body{font:16px/1.6 system-ui;margin:24px;color:#17324d;background:#f3f7fb}h1{margin:0}#summary{font-weight:700}li[data-pass=true]{color:#167347}li[data-pass=false]{color:#b42318}#frames{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}iframe{border:1px solid #ccdbea;height:900px;background:white;flex-shrink:0}button{font:inherit}

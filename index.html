@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ação Social | Grupo Gomes &amp; Rosiane e Parceiros</title>
+    <meta name="description"
+        content="Preencha sua ficha de cadastro na Ação Social do Grupo Gomes &amp; Rosiane, Comunidade 7 de Setembro e Parceiros e selecione os serviços desejados.">
+    <meta name="referrer" content="no-referrer">
+    <meta property="og:title" content="Ação Social — Cadastro de participantes">
+    <meta property="og:description" content="Grupo Gomes &amp; Rosiane + Comunidade 7 de Setembro e Parceiros.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="theme-color" content="#123A65">
+    <link rel="icon" href="public/images/logos/logo-grupo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/fields.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#registration">Pular para o cadastro</a>
+    <header class="institution container">
+        <div class="logo-slot logo-main" data-logo="0"><span class="logo-placeholder">Logo principal</span></div>
+        <div class="logo-row" aria-label="Instituições participantes">
+            <div class="logo-slot" data-logo="1"></div>
+            <div class="logo-slot" data-logo="2"></div>
+            <div class="logo-slot" data-logo="3"></div>
+            <div class="logo-slot" data-logo="4"></div>
+        </div>
+        <p class="eyebrow">CUIDADO E CIDADANIA PARA A COMUNIDADE</p>
+        <h1><span class="title-main">AÇÃO SOCIAL</span><span class="title-detail">GRUPO GOMES &amp; ROSIANE +
+                Comunidade 7 de Setembro e Parceiros:</span></h1>
+        <div class="logo-row logo-row-bottom" aria-label="Instituições parceiras">
+            <div class="logo-slot" data-logo="5"></div>
+            <div class="logo-slot" data-logo="6"></div>
+            <div class="logo-slot" data-logo="7"></div>
+            <div class="logo-slot" data-logo="8"></div>
+        </div>
+    </header>
+    <main class="container" id="main-content">
+        <section class="registration-section" aria-labelledby="form-title">
+            <div class="form-heading">
+                <div>
+                    <h2 id="form-title">Ficha de Cadastro</h2>
+                    <p>Preencha seus dados e selecione os serviços que deseja solicitar.</p>
+                </div><span class="heading-badge"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                        stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                        <path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z" />
+                        <path d="m8 12 3 3 5-6" />
+                    </svg> Seus dados, com cuidado</span>
+            </div>
+            <form id="registration" novalidate>
+                <noscript>
+                    <p class="notice">Ative o JavaScript no navegador para validar seus dados e preparar a mensagem do
+                        WhatsApp.</p>
+                </noscript>
+                <p id="error-summary" class="error-summary" role="alert" hidden></p>
+                <fieldset class="form-group">
+                    <legend><span class="step">01</span> Dados pessoais</legend>
+                    <div class="fields-grid">
+                        <div class="field full"><label for="name">Nome</label><input id="name" name="name"
+                                placeholder="Seu nome completo" aria-describedby="name-error" required
+                                autocomplete="name" maxlength="120">
+                            <p class="field-error" id="name-error"></p>
+                        </div>
+                        <div class="field "><label for="cpf">CPF</label><input id="cpf" name="cpf"
+                                placeholder="000.000.000-00" aria-describedby="cpf-error" required inputmode="numeric"
+                                maxlength="14">
+                            <p class="field-error" id="cpf-error"></p>
+                        </div>
+                        <div class="field "><label for="rg">RG</label><input id="rg" name="rg"
+                                placeholder="Número do seu documento" aria-describedby="rg-error" required
+                                maxlength="30">
+                            <p class="field-error" id="rg-error"></p>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend><span class="step">02</span> Seu endereço</legend>
+                    <p class="section-hint">Digite o CEP para buscar o endereço ou preencha manualmente.</p>
+                    <div class="fields-grid address-grid">
+                        <div class="field cep-field"><label for="cep">CEP</label><input id="cep" name="cep"
+                                placeholder="00000-000" required inputmode="numeric" autocomplete="postal-code"
+                                maxlength="9" aria-describedby="cep-status cep-error">
+                            <p class="field-error" id="cep-error"></p>
+                            <p class="field-hint" id="cep-status" role="status" aria-live="polite"></p>
+                        </div>
+                        <div class="field address-field"><label for="address">Endereço</label><input id="address"
+                                name="address" placeholder="Rua, avenida, travessa…" aria-describedby="address-error"
+                                required autocomplete="address-line1" maxlength="160">
+                            <p class="field-error" id="address-error"></p>
+                        </div>
+                        <div class="field number-field">
+                            <div class="label-row"><label for="number">Nº</label><label class="inline-check"><input
+                                        id="noNumber" name="noNumber" type="checkbox"> Sem número</label></div><input
+                                id="number" name="number" placeholder="Ex.: 123, casa A" required maxlength="30"
+                                aria-describedby="number-error">
+                            <p class="field-error" id="number-error"></p>
+                        </div>
+                        <div class="field neighborhood-field"><label for="neighborhood">Bairro</label><input
+                                id="neighborhood" name="neighborhood" placeholder="Seu bairro"
+                                aria-describedby="neighborhood-error" required autocomplete="address-level3"
+                                maxlength="100">
+                            <p class="field-error" id="neighborhood-error"></p>
+                        </div>
+                        <div class="field city-field"><label for="city">Cidade</label><input id="city" name="city"
+                                placeholder="Sua cidade" aria-describedby="city-error" required
+                                autocomplete="address-level2" maxlength="100">
+                            <p class="field-error" id="city-error"></p>
+                        </div>
+                        <div class="field state-field"><label for="state">Estado</label><select id="state" name="state"
+                                autocomplete="address-level1" required aria-describedby="state-error">
+                                <option value="">Selecione a UF</option>
+                            </select>
+                            <p class="field-error" id="state-error"></p>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend><span class="step">03</span> Como podemos falar com você?</legend>
+                    <div class="fields-grid">
+                        <div class="field "><label for="phone">Telefone</label><input id="phone" name="phone"
+                                placeholder="(91) 99999-9999" aria-describedby="phone-error" type="tel" required
+                                inputmode="tel" autocomplete="tel-national" maxlength="15">
+                            <p class="field-error" id="phone-error"></p>
+                        </div>
+                        <div class="field "><label for="email">Email <span
+                                    class="optional">(opcional)</span></label><input id="email" name="email"
+                                placeholder="voce@exemplo.com" aria-describedby="email-error" type="email"
+                                autocomplete="email" maxlength="160">
+                            <p class="field-error" id="email-error"></p>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group services-group" aria-describedby="services-error">
+                    <legend><span class="step">04</span> Quais serviços você deseja realizar?</legend>
+                    <div class="services-meta">
+                        <p class="section-hint">Você pode escolher mais de uma opção.</p><span
+                            id="service-count">Selecione um ou mais</span>
+                    </div>
+                    <div class="services-grid" id="services-list"></div>
+                    <p class="field-error" id="services-error"></p>
+                </fieldset>
+                <div class="consent-area"><label class="consent-label" for="consent"><input type="checkbox" id="consent"
+                            name="consent" required aria-describedby="consent-error"><span>Autorizo o uso dos meus dados
+                            pessoais para organização do atendimento da Ação Social e seu encaminhamento à equipe
+                            responsável pelo WhatsApp, conforme o Aviso de Privacidade.</span></label>
+                    <p class="field-error" id="consent-error"></p>
+                    <details id="privacy-notice">
+                        <summary>Aviso de Privacidade</summary>
+                        <div class="privacy-copy">
+                            <p>Os dados desta ficha (nome, CPF, RG, endereço, telefone, email opcional e serviços
+                                escolhidos) são solicitados para organizar o atendimento da Ação Social.</p>
+                            <p>Esta página não salva os dados em banco de dados, cookies de cadastro ou armazenamento
+                                local. A consulta de endereço envia somente o CEP ao ViaCEP.</p>
+                            <p>Ao continuar, uma mensagem com os dados será aberta no WhatsApp. Você precisa revisar e
+                                confirmar o envio. Após o envio, o WhatsApp e a equipe organizadora poderão manter os
+                                dados conforme suas práticas e políticas.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="submit-area">
+                    <p><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-width="1.6" aria-hidden="true">
+                            <rect x="5" y="10" width="14" height="11" rx="2" />
+                            <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                        </svg>Você revisa a mensagem no WhatsApp<br>e confirma o envio por lá.</p><button
+                        class="submit-button" type="submit" disabled>Enviar dados <svg viewBox="0 0 24 24" width="20"
+                            height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                            <path d="M5 12h14m-6-6 6 6-6 6" />
+                        </svg></button>
+                </div>
+                <div class="send-feedback" id="send-feedback" role="status" hidden><strong>Sua mensagem está pronta para
+                        revisão.</strong>
+                    <p>Se o WhatsApp não abriu, use o link abaixo. O envio só acontece quando você confirmar no
+                        WhatsApp.</p><a id="whatsapp-fallback" target="_blank" rel="noopener noreferrer"
+                        referrerpolicy="no-referrer">Abrir mensagem no WhatsApp</a>
+                </div>
+            </form>
+        </section>
+        <p class="closing-note">Cuidar da comunidade começa com a participação de cada um.</p>
+    </main>
+    <footer class="site-footer container"><span>AÇÃO SOCIAL</span>
+        <p>Grupo Gomes &amp; Rosiane · Comunidade 7 de Setembro e Parceiros</p>
+    </footer>
+</body>
+
+</html>

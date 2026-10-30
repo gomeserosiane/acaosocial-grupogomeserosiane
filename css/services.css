@@ -1,0 +1,111 @@
+/* Seleção múltipla, consentimento e aviso de privacidade. */
+.services-group {
+  border-top:1px solid var(--color-border);
+  padding-top:25px;
+  margin-bottom:26px
+}
+.services-group legend {
+  float:left;
+  width:100%
+}
+.services-meta {
+  clear:both;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:16px
+}
+.services-meta .section-hint {
+  margin:0
+}
+.services-meta>span {
+  font-size:11px;
+  color:var(--color-text-muted);
+  white-space:nowrap
+}
+.services-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px
+}
+.service-option {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-height:61px;
+  padding:14px 16px;
+  border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+  cursor:pointer;
+  font-size:13px;
+  font-weight:550;
+  line-height:1.5;
+  transition:background var(--transition-fast),border-color var(--transition-fast)
+}
+input[type=checkbox] {
+  accent-color:var(--color-primary);
+  flex-shrink:0
+}
+.service-option input,.consent-label input {
+  width:19px;
+  height:19px;
+  margin:0;
+  cursor:pointer
+}
+.service-option:hover {
+  border-color:#8caecc;
+  background:#f9fbfd
+}
+.service-option:has(input:checked) {
+  background:var(--color-background);
+  border-color:var(--color-secondary)
+}
+.service-option:has(input:focus-visible) {
+  outline:3px solid var(--color-secondary);
+  outline-offset:3px
+}
+.consent-area {
+  background:#f6f9fc;
+  border:1px solid #e5edf5;
+  padding:20px;
+  border-radius:var(--radius-md)
+}
+.consent-label {
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  font-size:12px;
+  line-height:1.8;
+  cursor:pointer
+}
+.consent-label input {
+  margin-top:2px
+}
+.consent-area>.field-error {
+  margin-left:31px
+}
+details {
+  margin-top:10px;
+  margin-left:31px
+}
+summary {
+  font-size:12px;
+  font-weight:650;
+  cursor:pointer;
+  padding:6px 0;
+  color:var(--color-primary);
+  width:fit-content;
+  min-height:32px
+}
+.privacy-copy {
+  font-size:12px;
+  color:var(--color-text-muted);
+  line-height:1.8
+}
+.privacy-copy p {
+  margin:10px 0
+}
+.pending-note {
+  color:#805300
+}

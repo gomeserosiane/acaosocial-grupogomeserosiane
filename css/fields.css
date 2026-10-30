@@ -1,0 +1,108 @@
+/* Campos, máscaras visuais, foco e mensagens de validação. */
+.field {
+  min-width:0
+}
+.field>label,.label-row>label:first-child {
+  display:block;
+  margin-bottom:7px;
+  font-size:13px;
+  font-weight:650
+}
+.field>input,.field>select {
+  display:block;
+  width:100%;
+  height:50px;
+  border:1px solid var(--color-border);
+  border-radius:var(--radius-sm);
+  padding:12px 14px;
+  color:var(--color-text);
+  background:#fff;
+  transition:border-color var(--transition-fast),box-shadow var(--transition-fast);
+  line-height:1.4
+}
+.field>select {
+  padding-right:8px
+}
+.field input::placeholder {
+  color:#637487;
+  opacity:1
+}
+.field>input:hover,.field>select:hover {
+  border-color:#95aec4
+}
+.field>input:focus,.field>select:focus {
+  border-color:var(--color-secondary);
+  box-shadow:0 0 0 3px #3478b914;
+  outline:0
+}
+.field>input[aria-invalid=true],.field>select[aria-invalid=true] {
+  border-color:var(--color-error);
+  background:#fffcfb
+}
+.field>input[aria-invalid=false]:not(:placeholder-shown) {
+  border-color:#83a998
+}
+.field>input[readonly] {
+  background:#f2f6f9;
+  color:var(--color-text-muted)
+}
+.optional {
+  color:var(--color-text-muted);
+  font-weight:400
+}
+.field-error {
+  font-size:12px;
+  color:var(--color-error);
+  line-height:1.5;
+  margin-top:6px
+}
+.field-error:empty {
+  display:none
+}
+.field-hint {
+  font-size:12px;
+  line-height:1.5;
+  color:var(--color-text-muted);
+  margin-top:6px
+}
+.field-hint:empty {
+  display:none
+}
+.field-hint[data-state=loading]::before {
+  content:'';
+  display:inline-block;
+  width:11px;
+  height:11px;
+  border:2px solid var(--color-border);
+  border-top-color:var(--color-secondary);
+  border-radius:50%;
+  margin-right:6px;
+  animation:spin .8s linear infinite
+}
+.field-hint[data-state=success] {
+  color:var(--color-success)
+}
+.label-row {
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px
+}
+.inline-check {
+  font-size:12px;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  min-height:27px;
+  cursor:pointer
+}
+.inline-check input {
+  margin:0;
+  width:16px;
+  height:16px;
+  accent-color:var(--color-primary)
+}
+.number-field .label-row {
+  margin-top:-6px;
+  margin-bottom:4px
+}

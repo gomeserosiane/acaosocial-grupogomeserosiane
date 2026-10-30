@@ -1,0 +1,41 @@
+/* Entradas discretas e respeito à preferência de movimento reduzido. */
+@keyframes arrive {
+  from {
+    opacity:0;
+    transform:translateY(10px)
+  }
+  to {
+    opacity:1;
+    transform:translateY(0)
+  }
+}
+@keyframes spin {
+  to {
+    transform:rotate(360deg)
+  }
+}
+.logo-main {
+  animation:arrive .45s ease both
+}
+.logo-row {
+  animation:arrive .45s .06s ease both
+}
+.institution h1,.institution>.eyebrow,.header-note {
+  animation:arrive .5s .1s ease both
+}
+.logo-row-bottom {
+  animation-delay:.14s
+}
+.registration-section {
+  animation:arrive .5s .18s ease both
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important
+  }
+  html {
+    scroll-behavior:auto
+  }
+}

@@ -1,0 +1,107 @@
+/* Base da página, tipografia, foco e elementos compartilhados. */
+*,*::before,*::after {
+  box-sizing:border-box
+}
+html {
+  scroll-behavior:smooth
+}
+/* Foto de fundo: Austin Distel / useproof.com, via Unsplash. */
+body {
+  margin:0;
+  background-color:var(--color-background);
+  background-image:linear-gradient(rgba(237,244,250,.74),rgba(237,244,250,.88)),url('../public/images/background-office.jpeg');
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  color:var(--color-text);
+  font-family:var(--font-sans);
+  font-size:16px;
+  line-height:1.6;
+  border-top:5px solid var(--color-primary)
+}
+h1,h2,p {
+  margin:0
+}
+a {
+  color:var(--color-primary);
+  text-underline-offset:4px
+}
+button,input,select {
+  font:inherit
+}
+button,a,input,select,summary {
+  -webkit-tap-highlight-color:transparent
+}
+button {
+  cursor:pointer
+}
+svg {
+  flex-shrink:0
+}
+input,select,button {
+  min-width:0
+}
+fieldset {
+  min-width:0
+}
+img {
+  max-width:100%;
+  display:block
+}
+::selection {
+  background:#c8e3f8;
+  color:var(--color-primary)
+}
+:focus-visible {
+  outline:3px solid var(--color-secondary);
+  outline-offset:4px
+}
+[hidden] {
+  display:none!important
+}
+.container {
+  width:calc(100% - 48px);
+  max-width:var(--container-width);
+  margin-inline:auto
+}
+.eyebrow {
+  font-size:11px;
+  letter-spacing:.16em;
+  font-weight:750;
+  color:#28639c
+}
+.skip-link {
+  position:fixed;
+  top:12px;
+  left:16px;
+  transform:translateY(-180%);
+  background:white;
+  padding:12px 20px;
+  z-index:10
+}
+.skip-link:focus {
+  transform:translateY(0)
+}
+.closing-note {
+  text-align:center;
+  font-size:14px;
+  color:var(--color-text-muted);
+  margin:26px 12px 38px
+}
+.site-footer {
+  display:flex;
+  gap:20px;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid var(--color-border);
+  padding:22px 0 32px;
+  font-size:11px;
+  color:var(--color-text-muted)
+}
+.site-footer>span {
+  font-weight:800;
+  letter-spacing:.12em;
+  color:var(--color-primary);
+  white-space:nowrap
+}

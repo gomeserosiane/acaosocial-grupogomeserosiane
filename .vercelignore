@@ -1,0 +1,7 @@
+tests/
+scripts/
+README.md
+VALIDACAO.md
+.openai/
+dist/
+node_modules/

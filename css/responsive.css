@@ -1,0 +1,222 @@
+/* Ajustes de conteúdo para desktop, tablet e celulares. */
+@media(min-width:1440px) {
+  .institution {
+    padding-top:42px
+  }
+}
+@media(max-width:1023px) {
+  .form-heading {
+    padding:30px
+  }
+  .heading-badge {
+    display:none
+  }
+  form {
+    padding:24px 30px 30px
+  }
+  .logo-row {
+    gap:18px
+  }
+}
+@media(max-width:767px) {
+  .container {
+    width:calc(100% - 32px)
+  }
+  .institution {
+    padding:24px 12px
+  }
+  .institution>.eyebrow {
+    font-size:9px;
+    letter-spacing:.1em
+  }
+  .institution h1 {
+    font-size:17px;
+    margin-top:12px
+  }
+  .title-main {
+    font-size:37px
+  }
+  .header-note {
+    font-size:12px
+  }
+  .logo-main {
+    margin-bottom:16px;
+    height:120px
+  }
+  .logo-main .logo-placeholder {
+    height:62px;
+    width:162px
+  }
+  .logo-row {
+    max-width:320px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px 20px;
+    margin-bottom:26px
+  }
+  .logo-row-bottom {
+    margin-top:22px;
+    margin-bottom:0
+  }
+  .logo-slot {
+    height:100px
+  }
+  .logo-main {
+    height:120px
+  }
+  .logo-placeholder {
+    height:31px;
+    width:110px;
+    font-size:10px
+  }
+  .form-heading {
+    padding:25px 22px
+  }
+  .form-heading p:not(.eyebrow) {
+    font-size:13px
+  }
+  .form-heading .eyebrow {
+    font-size:10px
+  }
+  form {
+    padding:20px 22px 26px
+  }
+  .required-note {
+    font-size:11px;
+    margin-bottom:25px
+  }
+  .fields-grid,.address-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:17px
+  }
+  .address-grid>.field {
+    grid-column:auto
+  }
+  .form-group {
+    margin-bottom:28px
+  }
+  .form-group legend {
+    font-size:15px;
+    gap:9px
+  }
+  .section-hint {
+    font-size:12px
+  }
+  .field>input,.field>select {
+    font-size:16px
+  }
+  .services-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:10px
+  }
+  .services-meta {
+    align-items:flex-start;
+    flex-direction:column;
+    gap:4px
+  }
+  .service-option {
+    min-height:58px;
+    font-size:13px
+  }
+  .consent-area {
+    padding:16px
+  }
+  .consent-label {
+    font-size:12px
+  }
+  .submit-area {
+    flex-direction:column-reverse;
+    align-items:stretch;
+    gap:16px;
+    margin-top:22px
+  }
+  .submit-button {
+    width:100%;
+    justify-content:center
+  }
+  .submit-area>p {
+    align-self:center;
+    font-size:11px
+  }
+  .site-footer {
+    flex-direction:column;
+    text-align:center;
+    gap:7px;
+    padding-top:20px
+  }
+  .closing-note {
+    font-size:12px;
+    margin:22px 20px 28px
+  }
+  .registration-section {
+    border-radius:12px
+  }
+}
+@media(max-width:424px) {
+  .container {
+    width:calc(100% - 24px)
+  }
+  .form-heading {
+    padding:24px 18px
+  }
+  form {
+    padding:20px 18px 24px
+  }
+  .institution {
+    padding-inline:8px
+  }
+  .title-main {
+    font-size:34px
+  }
+  .institution h1 {
+    font-size:15px
+  }
+  .form-group legend {
+    font-size:14px
+  }
+  .consent-area {
+    padding:14px
+  }
+  .service-option {
+    padding:14px
+  }
+  .heading-badge {
+    display:none
+  }
+}
+@media(max-width:374px) {
+  .container {
+    width:calc(100% - 20px)
+  }
+  .form-heading {
+    padding:22px 16px
+  }
+  form {
+    padding:20px 16px 24px
+  }
+  .institution h1 {
+    font-size:14px
+  }
+  .institution>.eyebrow {
+    font-size:8px
+  }
+  .logo-row {
+    gap:8px 12px
+  }
+  .form-heading h2 {
+    font-size:25px
+  }
+  .consent-label {
+    gap:9px
+  }
+  .service-option {
+    gap:9px;
+    padding:12px
+  }
+  .form-group legend {
+    gap:7px
+  }
+  .step {
+    width:26px;
+    height:26px
+  }
+}

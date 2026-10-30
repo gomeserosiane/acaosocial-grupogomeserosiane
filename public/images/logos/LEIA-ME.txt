@@ -1,0 +1,1 @@
+Coloque aqui as nove imagens oficiais e configure seus caminhos e textos alternativos em js/config.js. Nenhuma marca fictícia está incluída.

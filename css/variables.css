@@ -1,0 +1,19 @@
+/* Tokens do Design System institucional. */
+:root {
+  --color-primary:#123A65;
+  --color-secondary:#3478B9;
+  --color-background:#EDF4FA;
+  --color-surface:#fff;
+  --color-text:#17324D;
+  --color-text-muted:#526579;
+  --color-border:#D4E1EC;
+  --color-error:#B42318;
+  --color-success:#167347;
+  --radius-sm:6px;
+  --radius-md:10px;
+  --radius-lg:16px;
+  --container-width:960px;
+  --transition-fast:160ms ease;
+  --transition-normal:260ms ease;
+  --font-sans:'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
